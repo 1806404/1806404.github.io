@@ -1,35 +1,96 @@
 <!DOCTYPE html>
+
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <tittle>グラフを描画してみる</tittle>
-    </head>
 
-    <body>
-        <header>
-            <h1>グラフを描画する</h1>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Kazuhiko Yoshimoto" />
+    <link rel="stylesheet" href="CSS/base.css">
 
-        <div>
-            <h2>折れ線グラフ</h2>
-            <canvas id="lineChart"></canvas>
-        </div>
+    <title>高知県</title>
+</head>
 
-        <div>
-            <h2>棒グラフ</h2>
-            <canvas id="barChart"></canvas>
-        </div>
+<body>
+    <header>
+        <h1 id="top">高知県おすすめ紹介</h1>
+        <nav id="menu">
+            <ul>
+                <li>
+                    ホーム
+                </li>
+                <li>
+                    <a href="../2/index.html" target="_self">観光</a>
+                </li>
+                <li>
+                    <a href="../3/index.html" target="_self">食べ物</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- 外部のjavascriptファイルを読み込む -->
-        <!-- 読み込む順番が重要 -->
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <h2>基本情報</h2>
+    <p>日本の四国地方に位置する県。徳島県、愛媛県が隣接している。</p>
+    <img src="img/koutizu4.png" alt="高知の位置" width="400"/>
+
+    <div>
+        <table border="1">
+            <tr>
+                <th colspan="2">高知</th>
+            </tr>
+            <tr>
+                <td>　面積　</td>
+                <td>　710386㎢　</td>
+            </tr>
+            <tr>
+                <td>　総人口　</td>
+                <td>　684632人　</td>
+            </tr>
+            <tr>
+                <td>　人口密度　</td>
+                <td>　96.4人/㎢　</td>
+            </tr>
+            <tr>
+                <td>　県の木　</td>
+                <td>　ヤナセスギ　</td>
+            </tr>
+            <tr>
+                <td>　県の花　</td>
+                <td>　ヤマモモ　</td>
+            </tr>
+            <tr>
+                <td>　県の鳥　</td>
+                <td>　ヤイロチョウ　</td>
+            </tr>
+            <tr>
+                <td rowspan="3">　他のシンボル　</td>
+                <td class="blue">　県の魚：カツオ　</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>　県の歌：高知県民の歌　</td>
+            </tr>
+            <tr>
+                <!-- <td></td> -->
+                <td>　県のキャラクター：くろしおくん　</td>
+            </tr>
+           
+        </table>
+    </div>
+
+    <a href="https://www.pref.kochi.lg.jp/" target="_blank">高知県庁ホームページ</a>
+    <a href="https://www.city.kochi.kochi.jp/" target="_blank">高知市公式ホームページ</a>
+    <div>
+        <a href="../2/index.html" target="_self">＞＞1ページ次へ進む・＞</a>
+    </div>
     
-        <!-- Chart.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.js"></script>
+    
+    <a href="#top">ページトップに戻る</a>
 
-        <!-- jQueryを使ってみる -->
-        <script src="js/test-chart.js"></script>
+    <footer>
+        Copyright &copy; Kazuhiko Yoshimoto, All Rights Reserved.
+    </footer>
 
-    </body>
+    <script src="js/kadai.js"></script>
+</body>
+
 </html>
